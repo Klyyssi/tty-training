@@ -4,4 +4,4 @@ RUN logstash-plugin install logstash-output-mongodb
 
 COPY logstash.conf /etc/logstash/
 
-CMD ["-f", "/etc/logstash/logstash.conf","--debug"]
+CMD ["-f", "/etc/logstash/logstash.conf","--debug"] # "-l", "/var/log/logstash/logstash_log"]

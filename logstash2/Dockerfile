@@ -1,6 +1,6 @@
 FROM logstash:2
 
-RUN logstash-plugin install logstash-output-rabbitmq
+RUN logstash-plugin install logstash-output-mongodb logstash-input-rabbitmq
 
 COPY logstash.conf /etc/logstash/
 

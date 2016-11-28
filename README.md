@@ -18,5 +18,8 @@ docker run -d --name logstash -p 81:2000 --network tty-training -h logstash tty-
 docker build ./logstash2 --tag tty-logstash2
 docker run -d --name logstash2 -p 82:2000 --network tty-training -h logstash2 tty-logstash2
 
+docker build ./backend --tag tty-backend
+docker run -d --name backend -p 9000:9000 --network tty-training -h backend tty-backend
+
 docker build ./haproxy --tag tty-haproxy
 docker run -d --name haproxy -p 80:80 --network tty-training tty-haproxy

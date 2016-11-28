@@ -1,0 +1,10 @@
+{
+  "name": "backend",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+	"express": "4.14.0",
+    "mongodb": "2.2.11"
+  }
+}

@@ -1,0 +1,7 @@
+{
+	"serverPort": 9000,
+	"dbHost": "mongo",
+	"dbPort": 27017,
+	"dbName": "ordersDB",
+	"collectionName": "orders"
+}
